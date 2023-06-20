@@ -29,6 +29,18 @@
 
             tapping-term-ms = <125>;
         };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -63,10 +75,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt DELETE LS(LC(LG(LEFT_ALT)))  &kp Q  &kp W      &kp F               &kp P        &kp B      &kp J    &kp L      &kp U    &kp Y  &kp SEMI   &CPY_PST
-                        &kp ESC  &kp A  &kp R      &kp S               &kp T        &kp G      &kp M    &kp N      &kp E    &kp I     &kp O   &kp BSPC
-                      &kp PG_UP  &kp Z  &kp X      &kp C               &kp D        &kp V      &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
-                                               &lt 2 TAB  &lt 3 SINGLE_QUOTE  &lt 1 SPACE    &kp RET  &kp DQT  &kp GRAVE
+&mt DELETE LS(LC(LG(LEFT_ALT)))        &kp Q           &kp W           &kp F               &kp P        &kp B      &kp J    &kp L      &kp U    &kp Y  &kp SEMI   &CPY_PST
+                        &kp ESC  &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_GUI S    &hm LEFT_SHIFT T        &kp G      &kp M    &kp N      &kp E    &kp I     &kp O   &kp BSPC
+                      &kp PG_UP        &kp Z           &kp X           &kp C               &kp D        &kp V      &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+                                                                   &lt 2 TAB  &lt 3 SINGLE_QUOTE  &lt 1 SPACE    &kp RET  &kp DQT  &kp GRAVE
             >;
         };
 
@@ -80,10 +92,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp LBKT   &kp RBKT   &kp LPAR   &kp RPAR              &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &kp NON_US_BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &kp HOME  &kp PG_DN  &kp PG_UP    &kp END             &kp TILDE
-                        &trans  &trans  &trans          &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp LBKT   &kp RBKT   &kp LPAR   &kp RPAR              &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans     &kp CAPSLOCK  &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &kp NON_US_BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(MINUS)  &kp HOME  &kp PG_DN  &kp PG_UP    &kp END             &kp TILDE
+                        &trans  &trans  &trans           &trans    &trans     &trans
             >;
         };
 
@@ -100,10 +112,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp SLASH  &kp N7  &kp N8  &kp N9  &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp EQUAL  &kp N4  &kp N5  &kp N6  &trans  &kp NON_US_BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N1  &kp N2  &kp N3  &trans             &kp TILDE
-                        &trans  &trans  &trans       &trans  &trans  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans         &kp SLASH    &mt AMPERSAND NUMBER_7           &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mt PLUS EQUAL       &mt DOLLAR NUMBER_4            &mt PERCENT NUMBER_5             &mt CARET NUMBER_6  &trans  &kp NON_US_BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans         &kp MINUS  &mt EXCLAMATION NUMBER_1                 &mt AT NUMBER_2              &mt HASH NUMBER_3  &trans             &kp TILDE
+                        &trans  &trans  &trans            &trans                    &trans  &mt RIGHT_PARENTHESIS NUMBER_0
             >;
 
             label = "NUM";
