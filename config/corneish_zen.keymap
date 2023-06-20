@@ -31,6 +31,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <25 34>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <4 7>;
+        };
+
+        underscore {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <28 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
