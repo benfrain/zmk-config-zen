@@ -19,15 +19,6 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings =
-                <&none>,
-                <&none>;
-
-            #binding-cells = <2>;
-        };
         CPY_PST: CPY_PST {
             compatible = "zmk,behavior-tap-dance";
             label = "CPY_PST";
