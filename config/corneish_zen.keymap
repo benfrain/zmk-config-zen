@@ -29,17 +29,35 @@
 
             tapping-term-ms = <125>;
         };
-        hm: homerow_mods {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HML";
             bindings =
                 <&kp>,
                 <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <36 37 38 39 40 41 30 18 6 7 31 19 8 20 32 33 21 9 10 22 35 34 23 11>;
+            hold-trigger-on-release;
+        };
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <41 40 39 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            hold-trigger-on-release;
         };
     };
 
@@ -75,10 +93,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt DELETE LS(LC(LG(LEFT_ALT)))        &kp Q           &kp W           &kp F               &kp P        &kp B      &kp J         &kp L       &kp U       &kp Y     &kp SEMI   &CPY_PST
-                        &kp ESC  &hm LCTRL A  &hm LEFT_ALT R  &hm LEFT_GUI S    &hm LEFT_SHIFT T        &kp G      &kp M  &hm RSHIFT N  &hm RGUI E  &hm RALT I  &hm RCTRL O   &kp BSPC
-                      &kp PG_UP        &kp Z           &kp X           &kp C               &kp D        &kp V      &kp K         &kp H   &kp COMMA     &kp DOT     &kp FSLH  &kp PG_DN
-                                                                   &lt 3 TAB  &lt 2 SINGLE_QUOTE  &lt 1 SPACE    &kp RET       &kp DQT   &kp GRAVE
+&mt DELETE LS(LC(LG(LEFT_ALT)))         &kp Q            &kp W        &kp F               &kp P        &kp B      &kp J          &kp L        &kp U             &kp Y      &kp SEMI   &CPY_PST
+                        &kp ESC  &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S       &hml LSHIFT T        &kp G      &kp M  &hmr RSHIFT N  &hmr RGUI E  &hmr RIGHT_ALT I  &hmr RCTRL O   &kp BSPC
+                      &kp PG_UP         &kp Z            &kp X        &kp C               &kp D        &kp V      &kp K          &kp H    &kp COMMA           &kp DOT      &kp FSLH  &kp PG_DN
+                                                                  &lt 3 TAB  &lt 2 SINGLE_QUOTE  &lt 1 SPACE    &kp RET        &kp DQT    &kp GRAVE
             >;
         };
 
