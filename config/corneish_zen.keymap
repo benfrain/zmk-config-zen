@@ -115,10 +115,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &kp F12  &kp LBKT   &kp RBKT   &kp LPAR   &kp RPAR  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans     &kp CAPSLOCK  &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(MINUS)  &kp HOME  &kp PG_DN  &kp PG_UP    &kp END      &kp TILDE
-                        &trans  &trans  &trans           &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp F12         &kp LBKT  &kp RBKT   &kp LPAR   &kp RPAR  &kp RS(LBKT)                 &kp RS(RBKT)
+&trans  &trans  &trans  &trans  &trans   &trans     &kp CAPSLOCK  &kp LEFT   &kp DOWN     &kp UP     &kp RIGHT  &mt RS(BACKSLASH) BACKSLASH
+&trans  &trans  &trans  &trans  &trans   &trans    &kp LA(MINUS)  &kp HOME  &kp PG_DN  &kp PG_UP       &kp END                    &kp TILDE
+                        &trans  &trans   &trans           &trans    &trans     &trans
             >;
         };
 
