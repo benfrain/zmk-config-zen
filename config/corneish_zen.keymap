@@ -98,10 +98,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) DEL         &kp Q            &kp W        &kp F               &kp P        &kp B      &kp J          &kp L        &kp U             &kp Y      &kp SEMI   &CPY_PST
-                 &kp ESC  &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S       &hml LSHIFT T        &kp G      &kp M  &hmr RSHIFT N  &hmr RGUI E  &hmr RIGHT_ALT I  &hmr RCTRL O   &kp BSPC
-               &kp PG_UP         &kp Z            &kp X        &kp C               &kp D        &kp V      &kp K          &kp H    &kp COMMA           &kp DOT      &kp FSLH  &kp PG_DN
-                                                           &lt 3 TAB  &lt 2 SINGLE_QUOTE  &lt 1 SPACE    &kp RET        &kp DQT    &kp GRAVE
+&mt LS(LC(LG(LALT))) DEL         &kp Q            &kp W        &kp F               &kp P        &kp B      &kp J          &kp L                &kp U                  &kp Y  &mt SEMICOLON RS(SEMICOLON)   &CPY_PST
+                 &kp ESC  &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S       &hml LSHIFT T        &kp G      &kp M  &hmr RSHIFT N          &hmr RGUI E       &hmr RIGHT_ALT I                 &hmr RCTRL O   &kp BSPC
+               &kp PG_UP         &kp Z            &kp X        &kp C               &kp D        &kp V      &kp K          &kp H  &mt COMMA RS(COMMA)  &mt PERIOD RS(PERIOD)          &mt SLASH RS(SLASH)  &kp PG_DN
+                                                           &lt 3 TAB  &lt 2 SINGLE_QUOTE  &lt 1 SPACE    &kp RET        &kp DQT            &kp GRAVE
             >;
         };
 
