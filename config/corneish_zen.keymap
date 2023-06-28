@@ -99,7 +99,7 @@
 
             bindings = <
 &mt LS(LC(LG(LALT))) DEL         &kp Q            &kp W        &kp F               &kp P        &kp B      &kp J          &kp L                &kp U                  &kp Y  &mt RS(SEMICOLON) SEMICOLON   &CPY_PST
-                 &kp ESC  &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S       &hml LSHIFT T        &kp G      &kp M  &hmr RSHIFT N          &hmr RGUI E       &hmr RIGHT_ALT I                 &hmr RCTRL O   &kp BSPC
+                 &kp ESC  &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S       &hml LSHIFT T        &kp G      &kp M  &hmr RSHIFT N          &hmr RGUI E        &hmr LEFT_ALT I                 &hmr RCTRL O   &kp BSPC
                &kp PG_UP         &kp Z            &kp X        &kp C               &kp D        &kp V      &kp K          &kp H  &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD          &mt LS(SLASH) SLASH  &kp PG_DN
                                                            &lt 3 TAB  &lt 2 SINGLE_QUOTE  &lt 1 SPACE    &kp RET        &kp DQT            &kp GRAVE
             >;
@@ -124,10 +124,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK    &mt AMPERSAND NUMBER_7  &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &kp PLUS       &mt DOLLAR NUMBER_4   &mt PERCENT NUMBER_5             &mt CARET NUMBER_6  &kp EQUAL     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &kp MINUS  &mt EXCLAMATION NUMBER_1        &mt AT NUMBER_2              &mt HASH NUMBER_3     &trans  &kp TILDE
-                        &trans  &trans  &trans    &kp NUMBER_0                    &trans                 &trans
+&trans  &trans  &trans  &trans         &trans  &trans    &kp ASTERISK    &mt AMPERSAND NUMBER_7  &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &kp RIGHT_ALT  &trans        &kp PLUS       &mt DOLLAR NUMBER_4   &mt PERCENT NUMBER_5             &mt CARET NUMBER_6  &kp EQUAL     &trans
+&trans  &trans  &trans  &trans         &trans  &trans       &kp MINUS  &mt EXCLAMATION NUMBER_1        &mt AT NUMBER_2              &mt HASH NUMBER_3     &trans  &kp TILDE
+                        &trans         &trans  &trans    &kp NUMBER_0                    &trans                 &trans
             >;
 
             label = "NUM";
