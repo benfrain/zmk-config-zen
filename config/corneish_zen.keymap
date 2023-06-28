@@ -79,8 +79,8 @@
             key-positions = <28 31>;
         };
 
-        emdash {
-            bindings = <&kp LA(MINUS)>;
+        equals {
+            bindings = <&kp EQUAL>;
             key-positions = <17 18>;
         };
     };
@@ -124,10 +124,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK    &mt AMPERSAND NUMBER_7           &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &kp PLUS       &mt DOLLAR NUMBER_4            &mt PERCENT NUMBER_5             &mt CARET NUMBER_6  &kp EQUAL     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &kp MINUS  &mt EXCLAMATION NUMBER_1                 &mt AT NUMBER_2              &mt HASH NUMBER_3     &trans  &kp TILDE
-                        &trans  &trans  &trans          &trans                    &trans  &mt RIGHT_PARENTHESIS NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK    &mt AMPERSAND NUMBER_7  &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &kp PLUS       &mt DOLLAR NUMBER_4   &mt PERCENT NUMBER_5             &mt CARET NUMBER_6  &kp EQUAL     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp MINUS  &mt EXCLAMATION NUMBER_1        &mt AT NUMBER_2              &mt HASH NUMBER_3     &trans  &kp TILDE
+                        &trans  &trans  &trans    &kp NUMBER_0                    &trans                 &trans
             >;
 
             label = "NUM";
