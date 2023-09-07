@@ -108,10 +108,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) DEL         &kp Q            &kp W        &kp F          &kp P                        &kp B                          &kp J          &kp L                &kp U                  &kp Y  &mt RS(SEMICOLON) SEMICOLON           &CPY_PST
-                 &kp ESC  &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N          &hmr RGUI E        &hmr LEFT_ALT I                 &hmr RCTRL O           &kp BSPC
-        &kp SINGLE_QUOTE         &kp Z            &kp X        &kp C          &kp D                        &kp V                          &kp K          &kp H  &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD          &mt LS(SLASH) SLASH  &kp DOUBLE_QUOTES
-                                                           &lt 3 TAB  &lt 2 PAGE_UP                  &lt 1 SPACE                        &kp RET  &kp PAGE_DOWN            &kp GRAVE
+&mt LS(LC(LG(LALT))) DEL  &kp Q         &kp W            &kp F          &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &CPY_PST
+&kp ESC                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S    &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
+&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C          &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
+                                                         &lt 3 PAGE_UP  &lt 2 TAB      &lt 1 SPACE                    &kp RET                      &kp GRAVE      &kp PG_DN
             >;
         };
 
@@ -125,19 +125,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp F12             &kp LBKT  &kp RBKT   &kp LPAR   &kp RPAR  &kp RS(LBKT)                 &kp RS(RBKT)
-&trans  &trans  &trans  &trans  &trans   &trans         &kp CAPSLOCK  &kp LEFT   &kp DOWN     &kp UP     &kp RIGHT  &mt RS(BACKSLASH) BACKSLASH
-&trans  &trans  &trans  &trans  &trans   &trans    &kp LA(LS(MINUS))  &kp HOME  &kp PG_DN  &kp PG_UP       &kp END                    &kp TILDE
-                        &trans  &trans   &trans               &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp F12    &kp LBKT           &kp RBKT  &kp LPAR   &kp RPAR   &kp RS(LBKT)  &kp RS(RBKT)
+&trans  &trans  &trans  &trans  &trans  &trans     &kp CAPSLOCK       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT     &mt RS(BACKSLASH) BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans     &kp LA(LS(MINUS))  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END       &kp TILDE
+                        &trans  &trans  &trans     &trans             &trans    &trans
             >;
         };
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans         &trans  &trans    &kp ASTERISK    &mt AMPERSAND NUMBER_7  &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &kp RIGHT_ALT  &trans        &kp PLUS       &mt DOLLAR NUMBER_4   &mt PERCENT NUMBER_5             &mt CARET NUMBER_6  &kp EQUAL     &trans
-&trans  &trans  &trans  &trans         &trans  &trans       &kp MINUS  &mt EXCLAMATION NUMBER_1        &mt AT NUMBER_2              &mt HASH NUMBER_3     &trans  &kp TILDE
-                        &trans         &trans  &trans    &kp NUMBER_0                    &trans                 &trans
+&trans  &trans  &trans  &trans  &trans         &trans    &kp ASTERISK  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &kp RIGHT_ALT  &trans    &kp PLUS      &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6             &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans         &trans    &kp MINUS     &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2        &mt HASH NUMBER_3              &trans     &kp TILDE
+                        &trans  &trans         &trans    &kp NUMBER_0  &trans                    &trans
             >;
 
             label = "NUM";
@@ -145,10 +145,10 @@
 
         system {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans           &trans        &trans   &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP    &kp C_NEXT        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                        &trans  &trans  &trans    &kp C_PLAY        &trans    &kp C_MUTE
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7      &kp F8        &kp F9        &kp F10          &kp F11       &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp C_PREV    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4
+                        &trans  &trans  &trans    &kp C_PLAY  &trans        &kp C_MUTE
             >;
 
             label = "SYS";
