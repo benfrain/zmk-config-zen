@@ -83,6 +83,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <17 18>;
         };
+
+        sleep {
+            bindings = <&kp LA(LG(C_EJECT))>;
+            key-positions = <0 11>;
+        };
     };
 
     keymap {
