@@ -85,7 +85,7 @@
         };
 
         sleep {
-            bindings = <&kp LA(LG(C_EJECT))>;
+            bindings = <&kp LA(LG(C_SLEEP))>;
             key-positions = <0 11>;
         };
     };
