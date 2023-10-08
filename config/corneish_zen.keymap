@@ -23,18 +23,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CPY_PST";
             #binding-cells = <0>;
-            bindings =
-                <&kp LG(C)>,
-                <&kp LG(V)>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>;
 
             tapping-term-ms = <125>;
         };
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -47,9 +43,7 @@
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -134,10 +128,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans    &kp ASTERISK  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH  &trans
-&trans  &trans  &trans  &trans  &kp RIGHT_ALT  &trans    &kp PLUS      &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6             &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans         &trans    &kp MINUS     &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2        &mt HASH NUMBER_3              &trans     &kp TILDE
-                        &trans  &trans         &trans    &kp NUMBER_0  &trans                    &trans
+&kp ASTRK  &kp MINUS      &mt AMPERSAND N7     &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &kp PLUS      &kp ASTERISK  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH  &kp RIGHT_ALT
+&kp SLASH  &kp BACKSPACE  &mt DOLLAR NUMBER_4  &mt PERCENT N5   &mt CARET NUMBER_6       &kp ENTER     &kp PLUS      &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6             &kp EQUAL  &trans
+&kp EQUAL  &kp N0         &mt EXCLAMATION N1   &mt AT NUMBER_2  &mt HASH NUMBER_3        &kp PERIOD    &kp MINUS     &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2        &mt HASH NUMBER_3              &trans     &kp TILDE
+                                               &trans           &trans                   &kp N0        &kp NUMBER_0  &trans                    &trans
             >;
 
             label = "NUM";
