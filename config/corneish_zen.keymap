@@ -102,10 +102,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) DEL  &kp Q         &kp W            &kp F          &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &CPY_PST
-&kp ESC                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S    &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
-&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C          &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &lt 3 PAGE_UP  &lt 2 TAB      &lt 1 SPACE                    &kp RET                      &kp GRAVE      &kp PG_DN
+&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F                   &kp P          &kp B                          &kp J                        &kp L          &kp U                 &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &CPY_PST
+&kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S             &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E           &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
+&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C                   &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA   &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
+                                                         &lt 3 LS(LEFT_BRACKET)  &kp TAB        &lt 1 SPACE                    &lt 2 ENTER                  &kp GRAVE      &kp LEFT_PARENTHESIS
             >;
         };
 
@@ -119,19 +119,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp F12    &kp LBKT           &kp RBKT  &kp LPAR   &kp RPAR   &kp RS(LBKT)  &kp RS(RBKT)
-&trans  &trans  &trans  &trans  &trans  &trans     &kp CAPSLOCK       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT     &mt RS(BACKSLASH) BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans     &kp LA(LS(MINUS))  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END       &kp TILDE
-                        &trans  &trans  &trans     &trans             &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &kp F12    &kp LBKT           &kp RBKT         &kp LPAR   &kp RPAR   &kp RS(LBKT)  &kp RS(RBKT)
+&trans  &trans  &trans  &trans  &trans  &trans     &kp CAPSLOCK       &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT     &mt RS(BACKSLASH) BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans     &kp LA(LS(MINUS))  &kp LS(LC(TAB))  &kp PG_DN  &kp PG_UP  &kp LC(TAB)   &kp TILDE
+                        &trans  &trans  &trans     &trans             &trans           &trans
             >;
         };
 
         num {
             bindings = <
-&kp ASTRK  &kp MINUS      &mt AMPERSAND N7     &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &kp PLUS      &kp ASTERISK  &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp SLASH  &kp RIGHT_ALT
-&kp SLASH  &kp BACKSPACE  &mt DOLLAR NUMBER_4  &mt PERCENT N5   &mt CARET NUMBER_6       &kp ENTER     &kp PLUS      &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6             &kp EQUAL  &trans
-&kp EQUAL  &kp N0         &mt EXCLAMATION N1   &mt AT NUMBER_2  &mt HASH NUMBER_3        &kp PERIOD    &kp MINUS     &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2        &mt HASH NUMBER_3              &trans     &kp TILDE
-                                               &trans           &trans                   &kp N0        &kp NUMBER_0  &trans                    &trans
+&kp ASTRK  &kp MINUS      &mt AMPERSAND N7     &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &kp PLUS      &trans  &trans  &trans  &trans  &trans  &trans
+&kp SLASH  &kp BACKSPACE  &mt DOLLAR NUMBER_4  &mt PERCENT N5   &mt CARET NUMBER_6       &kp ENTER     &trans  &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp N0         &mt EXCLAMATION N1   &mt AT NUMBER_2  &mt HASH NUMBER_3        &kp PERIOD    &trans  &trans  &trans  &trans  &trans  &trans
+                                               &kp TILDE        &trans                   &kp N0        &trans  &trans  &trans
             >;
 
             label = "NUM";
