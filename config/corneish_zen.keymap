@@ -19,7 +19,7 @@
 
 / {
     behaviors {
-        CPY_PST: CPY_PST {
+        cpy_pst: cpy_pst {
             compatible = "zmk,behavior-tap-dance";
             label = "CPY_PST";
             #binding-cells = <0>;
@@ -80,7 +80,7 @@
 
         sleep {
             bindings = <&kp LA(LG(C_SLEEP))>;
-            key-positions = <0 11>;
+            key-positions = <6 5>;
         };
 
         bottomesc {
@@ -102,7 +102,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F                   &kp P          &kp B                          &kp J                        &kp L          &kp U                 &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &CPY_PST
+&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F                   &kp P          &kp B                          &kp J                        &kp L          &kp U                 &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
 &kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S             &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E           &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
 &kp SINGLE_QUOTE          &kp Z         &kp X            &kp C                   &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA   &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
                                                          &lt 3 LS(LEFT_BRACKET)  &kp TAB        &lt 1 SPACE                    &lt 2 ENTER                  &kp GRAVE      &kp LEFT_PARENTHESIS
