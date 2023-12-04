@@ -27,6 +27,7 @@
 
             tapping-term-ms = <125>;
         };
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -40,6 +41,7 @@
             hold-trigger-key-positions = <36 37 38 39 40 41 30 18 6 7 31 19 8 20 32 33 21 9 10 22 35 34 23 11>;
             hold-trigger-on-release;
         };
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
@@ -60,7 +62,7 @@
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <25 34>;
+            key-positions = <0 11>;
         };
 
         minus {
@@ -80,7 +82,7 @@
 
         sleep {
             bindings = <&kp LA(LG(C_SLEEP))>;
-            key-positions = <6 5>;
+            key-positions = <0 11>;
         };
 
         bottomesc {
@@ -105,7 +107,7 @@
 &mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F                   &kp P          &kp B                          &kp J                        &kp L          &kp U                 &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
 &kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S             &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E           &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
 &kp SINGLE_QUOTE          &kp Z         &kp X            &kp C                   &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA   &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &lt 3 LS(LEFT_BRACKET)  &kp TAB        &lt 1 SPACE                    &lt 2 ENTER                  &kp GRAVE      &kp LEFT_PARENTHESIS
+                                                         &lt 2 LS(LEFT_BRACKET)  &lt 0 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &kp GRAVE      &kp LEFT_PARENTHESIS
             >;
         };
 
@@ -119,22 +121,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp F12    &kp LBKT           &kp RBKT         &kp LPAR   &kp RPAR   &kp RS(LBKT)  &kp RS(RBKT)
-&trans  &trans  &trans  &trans  &trans  &trans     &kp CAPSLOCK       &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT     &mt RS(BACKSLASH) BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans     &kp LA(LS(MINUS))  &kp LS(LC(TAB))  &kp PG_DN  &kp PG_UP  &kp LC(TAB)   &kp TILDE
-                        &trans  &trans  &trans     &trans             &trans           &trans
+&kp LS(STAR)  &kp MINUS      &kp N7        &kp N8     &kp N9           &kp LS(PLUS)    &kp LBKT           &kp RBKT         &kp LPAR   &kp RPAR   &kp RS(LBKT)  &kp RS(RBKT)
+&kp SLASH     &kp BACKSPACE  &kp N4        &kp N5     &kp N6           &kp RET         &kp CAPSLOCK       &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT     &mt RS(BACKSLASH) BACKSLASH
+&kp EQUAL     &kp NUMBER_0   &kp NUMBER_1  &kp N2     &kp N3           &kp DOT         &kp LA(LS(MINUS))  &kp LS(LC(TAB))  &kp PG_DN  &kp PG_UP  &kp LC(TAB)   &kp TILDE
+                                           &kp TILDE  &kp KP_NUMBER_0  &kp SPACE       &trans             &trans           &trans
             >;
-        };
-
-        num {
-            bindings = <
-&kp ASTRK  &kp MINUS      &mt AMPERSAND N7     &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &kp PLUS      &trans  &trans  &trans  &trans  &trans  &trans
-&kp SLASH  &kp BACKSPACE  &mt DOLLAR NUMBER_4  &mt PERCENT N5   &mt CARET NUMBER_6       &kp ENTER     &trans  &trans  &trans  &trans  &trans  &trans
-&kp EQUAL  &kp N0         &mt EXCLAMATION N1   &mt AT NUMBER_2  &mt HASH NUMBER_3        &kp PERIOD    &trans  &trans  &trans  &trans  &trans  &trans
-                                               &kp TILDE        &trans                   &kp N0        &trans  &trans  &trans
-            >;
-
-            label = "NUM";
         };
 
         system {
