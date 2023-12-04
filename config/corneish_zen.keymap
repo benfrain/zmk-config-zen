@@ -107,7 +107,7 @@
 &mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
 &kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
 &kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &caps_word   &lt 0 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &kp GRAVE      &kp LG(TAB)
+                                                         &caps_word   &lt 2 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp LG(TAB)
             >;
         };
 
