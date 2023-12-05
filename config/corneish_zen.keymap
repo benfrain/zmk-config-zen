@@ -25,7 +25,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(C)>, <&kp LG(V)>;
 
-            tapping-term-ms = <125>;
+            tapping-term-ms = <200>;
         };
 
         hml: hml {
