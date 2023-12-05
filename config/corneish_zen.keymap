@@ -25,7 +25,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(C)>, <&kp LG(V)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <125>;
         };
 
         hml: hml {
@@ -60,11 +60,6 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <5 6>;
-        };
-
         minus {
             bindings = <&kp MINUS>;
             key-positions = <4 7>;
@@ -82,11 +77,6 @@
 
         sleep {
             bindings = <&kp LA(LG(C_SLEEP))>;
-            key-positions = <0 11>;
-        };
-
-        bottomesc {
-            bindings = <&kp ESCAPE>;
             key-positions = <24 35>;
         };
     };
