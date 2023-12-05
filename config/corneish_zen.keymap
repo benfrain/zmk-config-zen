@@ -121,10 +121,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ASTRK  &kp MINUS      &kp N7        &kp N8     &kp N9           &kp PLUS     &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR       &kp RPAR   &kp LBKT     &kp RBKT
-&kp SLASH  &kp BACKSPACE  &kp N4        &kp N5     &kp N6           &kp RET      &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN       &kp UP     &kp RIGHT    &kp DOLLAR
-&kp EQUAL  &kp NUMBER_0   &kp NUMBER_1  &kp N2     &kp N3           &kp DOT      &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN      &kp PG_UP  &kp LC(TAB)  &kp TILDE
-                                        &kp TILDE  &kp KP_NUMBER_0  &kp SPACE    &trans                          &trans           &kp BACKSLASH
+&kp ASTRK  &kp MINUS      &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp PLUS     &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR       &kp RPAR   &kp LBKT     &kp RBKT
+&kp SLASH  &kp BACKSPACE  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp RET      &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN       &kp UP     &kp RIGHT    &kp DOLLAR
+&kp EQUAL  &kp NUMBER_0   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp DOT      &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN      &kp PG_UP  &kp LC(TAB)  &kp TILDE
+                                                     &kp TILDE                  &kp KP_NUMBER_0            &kp SPACE    &trans                          &trans           &kp BACKSLASH
             >;
         };
 
