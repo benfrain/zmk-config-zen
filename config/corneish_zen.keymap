@@ -94,10 +94,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
-&kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
-&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &caps_word   &lt 2 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp MINUS
+&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F           &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
+&kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S     &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
+&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C           &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
+                                                         &lt 3 CAPSLOCK  &lt 2 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp MINUS
             >;
         };
 
@@ -127,6 +127,15 @@
             >;
 
             label = "SYS";
+        };
+
+        windowPos {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                          &kp LS(LA(LC(LG(N7))))        &kp LS(LA(LC(LG(N8))))        &kp LS(LA(LC(LG(N9))))        &trans                     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(LC(LG(LEFT_ARROW))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))        &kp LS(LA(LC(LG(NUMBER_6))))  &kp LC(LS(LA(LG(RIGHT))))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(LC(LG(N0))))          &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &trans                     &trans
+                        &trans  &trans  &trans    &trans                          &trans                        &trans
+            >;
         };
     };
 };
