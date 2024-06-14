@@ -79,6 +79,11 @@
             bindings = <&kp LA(LG(C_SLEEP))>;
             key-positions = <24 35>;
         };
+
+        CapsWord {
+            bindings = <&caps_word>;
+            key-positions = <5 6>;
+        };
     };
 
     keymap {
@@ -94,10 +99,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F           &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
-&kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S     &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
-&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C           &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &lt 3 CAPSLOCK  &lt 2 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp MINUS
+&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
+&kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
+&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &kp D          &kp V                          &kp K                        &kp H          &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
+                                                         &lt 3 EQUAL  &lt 2 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp MINUS
             >;
         };
 
