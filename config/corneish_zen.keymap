@@ -138,8 +138,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                          &kp LS(LA(LC(LG(N7))))        &kp LS(LA(LC(LG(N8))))        &kp LS(LA(LC(LG(N9))))        &trans                     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(LC(LG(LEFT_ARROW))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))        &kp LS(LA(LC(LG(NUMBER_6))))  &kp LC(LS(LA(LG(RIGHT))))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(LC(LG(N0))))          &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &trans                     &trans
-                        &trans  &trans  &trans    &trans                          &trans                        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                          &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &trans                     &trans
+                        &trans  &trans  &trans    &kp LS(LA(LC(LG(N0))))          &trans                        &trans
             >;
         };
     };
