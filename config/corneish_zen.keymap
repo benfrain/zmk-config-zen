@@ -101,8 +101,8 @@
             bindings = <
 &mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
 &kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
-&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &lt 1 D        &kp V                          &kp K                        &lt 1 H        &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &lt 3 EQUAL  &lt 2 TAB      &lt 1 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp MINUS
+&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &lt 1 D        &lt 4 V                        &kp K                        &lt 1 H        &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
+                                                         &lt 3 EQUAL  &lt 2 TAB      &lt 4 SPACE                    &lt 1 ENTER                  &lt 2 GRAVE    &kp MINUS
             >;
         };
 
@@ -140,6 +140,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(LC(LG(LEFT_ARROW))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))        &kp LS(LA(LC(LG(NUMBER_6))))  &kp LC(LS(LA(LG(RIGHT))))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                          &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &trans                     &trans
                         &trans  &trans  &trans    &kp LS(LA(LC(LG(N0))))          &trans                        &trans
+            >;
+        };
+
+        right_num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS       &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp MINUS            &kp ASTRK
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER      &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp BACKSPACE        &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD     &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(N0) NUMBER_0  &kp EQUAL
+                        &trans  &trans  &trans    &mt LS(N0) N0  &kp LEFT_SHIFT             &kp SPACE
             >;
         };
     };
