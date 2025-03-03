@@ -101,25 +101,8 @@
             bindings = <
 &mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
 &kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
-&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &lt 5 D        &lt 4 V                        &kp K                        &lt 1 H        &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &lt 2 EQUAL  &lt 3 TAB      &lt 4 SPACE                    &lt 6 ENTER                  &kp GRAVE      &kp MINUS
-            >;
-        };
-
-        nav {
-            label = "NAV";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&kp ASTRK  &kp MINUS      &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp PLUS    &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
-&kp SLASH  &kp BACKSPACE  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp RET     &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp DOLLAR
-&kp EQUAL  &kp NUMBER_0   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp DOT     &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
-                                                     &kp SPACE                  &kp LEFT_SHIFT             &kp N0      &mt LS(BACKSLASH) BACKSLASH     &kp RIGHT_ALT    &kp LG(LC(RIGHT))
+&kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &lt 4 D        &lt 3 V                        &kp K                        &lt 0 H        &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
+                                                         &lt 1 EQUAL  &lt 2 TAB      &lt 3 SPACE                    &lt 4 ENTER                  &kp GRAVE      &kp MINUS
             >;
         };
 
@@ -152,23 +135,13 @@
             >;
         };
 
-        arrows {
-            label = "arrows";
+        Nav {
+            label = "Nav";
             bindings = <
-&none  &none  &none  &none           &none   &none                         &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
-&none  &none  &none  &none           &none   &none                         &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp DOLLAR
-&none  &none  &none  &kp LEFT_SHIFT  &trans  &none                         &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
-                     &none           &none   &kp LA(LC(LG(LEFT_SHIFT)))    &mt LS(BACKSLASH) BACKSLASH     &kp RIGHT_ALT    &kp LG(LC(RIGHT))
-            >;
-        };
-
-        NavNew {
-            label = "NavNew";
-            bindings = <
-&kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &none  &none  &none  &none    &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
-&none                             &none                              &none  &none  &none  &none    &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp DOLLAR
-&none                             &none                              &none  &none  &none  &none    &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
-                                                                            &none  &none  &none    &mt LS(BACKSLASH) BACKSLASH     &kp RIGHT_ALT    &kp LG(LC(RIGHT))
+&kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &none  &none           &none  &none    &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
+&none                             &none                              &none  &none           &none  &none    &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp DOLLAR
+&none                             &none                              &none  &kp LEFT_SHIFT  &none  &none    &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
+                                                                            &none           &none  &none    &mt LS(BACKSLASH) BACKSLASH     &kp RIGHT_ALT    &kp LG(LC(RIGHT))
             >;
         };
     };
