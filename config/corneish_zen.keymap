@@ -114,7 +114,7 @@
                              &trans  &trans  &trans    &kp C_PLAY    &trans        &kp C_MUTE
             >;
 
-            label = "Sye";
+            label = "Sys";
         };
 
         window {
