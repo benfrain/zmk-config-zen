@@ -114,16 +114,18 @@
                              &trans  &trans  &trans    &kp C_PLAY    &trans        &kp C_MUTE
             >;
 
-            label = "SYS";
+            label = "Sye";
         };
 
-        windowPos {
+        window {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                          &kp LS(LA(LC(LG(N7))))        &kp LS(LA(LC(LG(N8))))        &kp LS(LA(LC(LG(N9))))        &trans                     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LA(LC(LG(LEFT_ARROW))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))        &kp LS(LA(LC(LG(NUMBER_6))))  &kp LC(LS(LA(LG(RIGHT))))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                          &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &trans                     &trans
                         &trans  &trans  &trans    &kp LS(LA(LC(LG(N0))))          &trans                        &trans
             >;
+
+            label = "Win";
         };
 
         right_num {
@@ -133,6 +135,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD     &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(N0) NUMBER_0  &kp EQUAL
                         &trans  &trans  &trans    &mt LS(N0) N0  &kp LEFT_SHIFT             &kp SPACE
             >;
+
+            label = "Num";
         };
 
         Nav {
