@@ -99,10 +99,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &cpy_pst
+&mt LS(LC(LG(LALT))) ESC  &kp Q         &kp W            &kp F        &kp P          &kp B                          &kp J                        &kp L          &kp U                &kp Y                  &mt RS(SEMICOLON) SEMICOLON  &kp MINUS
 &kp DEL                   &hml LCTRL A  &hml LEFT_ALT R  &hml LGUI S  &hml LSHIFT T  &hml LS(LC(LG(LEFT_ALT))) G    &hmr LS(LC(LG(LEFT_ALT))) M  &hmr RSHIFT N  &hmr RGUI E          &hmr LEFT_ALT I        &hmr RCTRL O                 &kp BSPC
 &kp SINGLE_QUOTE          &kp Z         &kp X            &kp C        &lt 4 D        &lt 3 V                        &kp K                        &lt 0 H        &mt RS(COMMA) COMMA  &mt RS(PERIOD) PERIOD  &mt LS(SLASH) SLASH          &kp DOUBLE_QUOTES
-                                                         &lt 1 EQUAL  &lt 2 TAB      &lt 3 SPACE                    &lt 4 ENTER                  &kp GRAVE      &kp MINUS
+                                                         &lt 1 EQUAL  &lt 2 TAB      &lt 3 SPACE                    &lt 4 ENTER                  &kp GRAVE      &cpy_pst
             >;
         };
 
