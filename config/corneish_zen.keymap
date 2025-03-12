@@ -37,9 +37,10 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <36 37 38 39 40 41 30 18 6 7 31 19 8 20 32 33 21 9 10 22 35 34 23 11>;
             hold-trigger-on-release;
+            require-prior-idle-ms = <125>;
         };
 
         hmr: hmr {
@@ -51,9 +52,10 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             global-quick-tap;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <41 40 39 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
+            require-prior-idle-ms = <125>;
         };
     };
 
